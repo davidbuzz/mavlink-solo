@@ -1115,6 +1115,12 @@
                   <param index="2">Reserved</param>
               </entry>
 
+              <entry value="2520" name="MAV_CMD_AIRFRAME_CONFIGURATION">
+                  <description>Landing gear up and down</description>
+                  <param index="1">Landing gear ID (default: 0, -1 for all)</param>
+                  <param index="2">Landing gear position (Down: 0, Up: 1, NAN for no change)</param>
+              </entry>
+
               <entry value="2800" name="MAV_CMD_PANORAMA_CREATE">
                   <description>Create a panorama at the current position</description>
                   <param index="1">Viewing angle horizontal of the panorama (in degrees, +- 0.5 the total angle)</param>

@@ -1282,8 +1282,14 @@ mode_mapping_apm = {
     12 : 'LOITER',
     14 : 'LAND',
     15 : 'GUIDED',
-    16 : 'INITIALISING'
+    16 : 'INITIALISING',
+    17 : 'QSTABILIZE',
+    18 : 'QHOVER',
+    19 : 'QLOITER',
+    20 : 'QLAND',
+    21 : 'QRTL'
     }
+
 mode_mapping_acm = {
     0 : 'STABILIZE',
     1 : 'ACRO',
@@ -1301,8 +1307,13 @@ mode_mapping_acm = {
     14 : 'FLIP',
     15 : 'AUTOTUNE',
     16 : 'POSHOLD',
-    17 : 'BRAKE'
+    17 : 'BRAKE',
+    18 : 'THROW',
+    19 : 'AVOID_ADSB',
+    20 : 'GUIDED_NOGPS',
+    21 : 'SMART_RTL'
     }
+
 mode_mapping_rover = {
     0 : 'MANUAL',
     2 : 'LEARNING',
@@ -1310,6 +1321,7 @@ mode_mapping_rover = {
     4 : 'HOLD',
     10 : 'AUTO',
     11 : 'RTL',
+    12 : 'SMART_RTL',
     15 : 'GUIDED',
     16 : 'INITIALISING'
     }
@@ -1328,7 +1340,6 @@ mode_mapping_px4 = {
     2 : 'EASY',
     3 : 'AUTO'
     }
-
 
 def mode_mapping_byname(mav_type):
     '''return dictionary mapping mode names to numbers, or None if unknown'''
